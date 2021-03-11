@@ -1,6 +1,6 @@
 **Equipo 2**
 # Práctica 1 
-### Primera Parte
+### Segunda Parte
 
 | Integrante | User | Tarea |
 |---------------|-------|---------|
