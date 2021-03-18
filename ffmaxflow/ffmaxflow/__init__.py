@@ -1,10 +1,34 @@
 class vertex:
+    """
+    A vertex in a network.
+
+    Attributes:
+
+        name (string): name or identifier of vertex
+
+        source (bool): whether the vertex is a source vertex or not
+
+        sink (bool): whether the vertex is a sink vertex or not
+    """
+
     def __init__(self, name, source=False, sink=False):
         self.name = name
         self.source = source
         self.sink = sink
 
 class edge:
+    """
+    An edge in a netwokt, going from one vertex to another
+
+    Attributes:
+
+        start (vertex): the edge comes out of this vertex
+
+        end (vertex): the edge arrives at this vertex
+
+        capacity (float): edge's maximum capacity
+    """
+
     def __init__(self, start, end, capacity):
         self.start = start
         self.end = end
