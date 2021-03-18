@@ -9,9 +9,9 @@ classifiers = [
 ]
  
 setup(
-  name='mno_maxflow',
-  version='0.0.1',
-  description='Implementación del método Fork Fulkerson para hallar el flujo máximo de una red',
+  name='ffmaxflow',
+  version='0.0.2',
+  description='Implementation of the  Fork Fulkerson method to fin the max posible flow of a nework',
   #long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
   url='',
   author='Equipo 2',

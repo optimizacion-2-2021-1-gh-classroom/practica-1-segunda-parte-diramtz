@@ -1,7 +1,7 @@
 Metadata-Version: 1.1
-Name: mno-maxflow
-Version: 0.0.1
-Summary: Implementación del método Fork Fulkerson para hallar el flujo máximo de una red
+Name: ffmaxflow
+Version: 0.0.2
+Summary: Implementation of the  Fork Fulkerson method to fin the max posible flow of a nework
 Home-page: UNKNOWN
 Author: Equipo 2
 Author-email: a@b.c
