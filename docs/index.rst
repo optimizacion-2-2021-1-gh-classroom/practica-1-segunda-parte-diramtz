@@ -1,4 +1,4 @@
-Flujo máximo
+Algoritmo Ford-Fulkerson
 ==========================================
 
 En esta documentación se explican los módulos y funciones creados para resolver el problema de oprimización de flujo máximo visto en el curso de oprimización primavera 2021.
@@ -28,3 +28,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+

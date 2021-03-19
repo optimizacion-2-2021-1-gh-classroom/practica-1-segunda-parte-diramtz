@@ -46,7 +46,3 @@ Finalmente, se calcula el flujo total que sale del nodo origen porque esta es la
 
 
 
-
-
-
-

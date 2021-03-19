@@ -1,4 +1,3 @@
-
 *********
 Funciones
 *********
@@ -64,3 +63,4 @@ Si deseas corroborar los arcos ejecuta lo siguiente:
 
 
  # NOTA: Esta función imprime los arcos tanto de ida como los de regreso
+
