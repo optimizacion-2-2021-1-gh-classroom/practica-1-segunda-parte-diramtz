@@ -3,7 +3,7 @@ name: sphinx-doc
 on:
   push:
     branches:    
-    - main
+    - issue_4
     paths:
     - src/docs/source/**
 
