@@ -1,9 +1,7 @@
-import pandas as pd
-import numpy as np
-from numpy import linalg
 from pytest import approx
 from MaxFlow import * 
 import networkx as nx
+
 
 
 #Resolvemos usando networkx
