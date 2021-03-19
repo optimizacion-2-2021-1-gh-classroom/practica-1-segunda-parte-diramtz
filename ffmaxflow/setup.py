@@ -10,8 +10,8 @@ classifiers = [
  
 setup(
   name='ffmaxflow',
-  version='0.0.2',
-  description='Implementation of the  Fork Fulkerson method to fin the max posible flow of a nework',
+  version='0.0.3',
+  description='Implementation of the  Fork Fulkerson method to find the max posible flow of a network',
   #long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
   url='',
   author='Equipo 2',

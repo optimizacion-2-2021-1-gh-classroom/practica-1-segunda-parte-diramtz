@@ -5,9 +5,7 @@ class vertex:
     Attributes:
 
         name (string): name or identifier of vertex
-
         source (bool): whether the vertex is a source vertex or not
-
         sink (bool): whether the vertex is a sink vertex or not
     """
 
@@ -23,10 +21,10 @@ class edge:
     Attributes:
 
         start (vertex): the edge comes out of this vertex
-
         end (vertex): the edge arrives at this vertex
-
-        capacity (float): edge's maximum capacity
+        capacity (float): edge's maximum flow capacity
+        flow (float): current flow in the edge
+        returnEdge (pointer): return edge which is used in the residual graph
     """
 
     def __init__(self, start, end, capacity):
@@ -37,6 +35,16 @@ class edge:
         self.returnEdge = None
 
 class create_flow_network:
+    """
+    A flow network to which we want to find the maximum flow posible going
+    from one vertex to another.
+
+    Attributes:
+
+       vertices (list): lists all of vertices in the graph
+       network (dictionary): maps every vertex's name to all of the edges
+                             coming out of the said vertex
+    """
     def __init__(self):
         self.vertices = []
         self.network = {}
@@ -125,4 +133,3 @@ class create_flow_network:
                 edge.returnEdge.flow -= flow
             path = self.get_path(source.name, sink.name, [])
         return sum(edge.flow for edge in self.network[source.name])
-

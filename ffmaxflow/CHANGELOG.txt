@@ -8,3 +8,7 @@ Change Log
 0.0.2 (18/03/21)
 ----------------
 - Name change
+
+0.0.3 (18/03/21)
+----------------
+- Better docstrings
