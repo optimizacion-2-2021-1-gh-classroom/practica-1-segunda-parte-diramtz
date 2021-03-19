@@ -10,9 +10,8 @@ Para instalar el paquete creado deberás de correr el siguiente comando:
   
 .. code-block:: bash
 
-   pip install # aquí nombre del paquete
+   pip install ffmaxflow
 
 Aquí url de PyPi
 
-# Aqí va url 
-
+https://pypi.org/project/ffmaxflow/
