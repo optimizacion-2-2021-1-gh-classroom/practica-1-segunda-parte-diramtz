@@ -1,5 +1,5 @@
 from pytest import approx
-from MaxFlow import * 
+from ffmaxflow import * 
 import networkx as nx
 
 
