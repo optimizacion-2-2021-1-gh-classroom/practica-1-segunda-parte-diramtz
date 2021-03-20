@@ -1,2 +1,2 @@
-MaxFlow
+ffmaxflow
 networkx
