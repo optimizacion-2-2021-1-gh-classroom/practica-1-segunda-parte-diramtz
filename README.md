@@ -69,5 +69,7 @@ Para correr nuestra imagen de docker sigue las instrucciones que se encuentran e
 
 **Referencias**
 [Algoritmo Ford Fulkerson](https://es.wikipedia.org/wiki/Algoritmo_de_Ford-Fulkerson)
+
 [Libro optimización nota 4.2](https://itam-ds.github.io/analisis-numerico-computo-cientifico/IV.optimizacion_en_redes_y_prog_lineal/4.1/Definiciones_generales_de_flujo_en_redes.html)
+
 [Ford Fulkerson Python](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)
