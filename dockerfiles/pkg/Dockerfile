@@ -17,7 +17,7 @@ RUN echo 'miuser ALL=(ALL:ALL) NOPASSWD:ALL' | (EDITOR='tee -a' visudo)
 RUN echo 'miuser:qwerty' | chpasswd
 RUN pip3 install jupyter jupyterlab==$JUPYTERLAB_VERSION --upgrade
 
-COPY requirements.txt
+COPY requirements.txt .
 RUN pip3 install --requirement requirements.txt
 COPY . .
 
