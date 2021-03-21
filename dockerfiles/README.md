@@ -12,15 +12,15 @@ Para construir tu contenedor desde la imagen que acabas de descargar y ejecutarl
 ```
 docker run -it -p 8888:8888 diramtz/pkg:0.1
 ```
-![docker run]("../images/docker2.png")
+![docker run](https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-diramtz/blob/issue_6/images/docker2.png)
 
 ### 3. Utilizar nuestro paquete en jupyterlab
 Después de ejecutar lo anterior, en la terminal te aparecerán dos urls diferentes. Copia la dirección de ```https://127.0.0.1:8888/lab``` la cual corresponde a tu localhost y pégala en la barra de direcciones de tu navegador preferido. Al dar enter, te pedirá una contraseña. La contraseña es **qwerty**.
 
 Después de ingresar la contraseña, te llevará a jupyterlab. En jupyterlab dirígete al directorio ```/home/miuser/``` aquí podrás crear notebooks de python y comenzar a trabajar.
-![directorio en jupyterlab]("../images/docker3.png")
-![directorio en jupyterlab]("../images/docker4.png")
+![directorio en jupyterlab](https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-diramtz/blob/issue_6/images/docker3.png)
+![directorio en jupyterlab](https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-diramtz/blob/issue_6/images/docker4.png)
 
 Encontrarás que el ambiente virtual de jupyterlab ya tiene instalado nuestro paquete ```ffmaxflow``` y podrás usarlo sin ningún problema.
 
-![ejercicio de ejemplo con ffmaxflow]("../images/docker5.png")
+![ejercicio de ejemplo con ffmaxflow](https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-diramtz/blob/issue_6/images/docker5.png)
