@@ -5,7 +5,7 @@ Nuestra imagen se encuentra alojada en dockerhub por lo que puedes descargarla e
 ```{bash}
 docker pull diramtz/pkg:0.1
 ```
-![descarga de la imagen desde dockerhub]("../images/docker1.png")
+![descarga de la imagen desde dockerhub](https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-diramtz/blob/issue_6/images/docker1.png)
 
 ### 2. Construir el contenedor
 Para construir tu contenedor desde la imagen que acabas de descargar y ejecutarlo en el puerto 8888, ejecuta el siguiente comando:
