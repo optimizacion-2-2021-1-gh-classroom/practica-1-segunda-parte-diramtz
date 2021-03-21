@@ -64,3 +64,13 @@ da click [aquí](https://optimizacion-2-2021-1-gh-classroom.github.io/practica-1
 **Docker** 
 
 Para correr nuestra imagen de docker sigue las instrucciones que se encuentran en la carpeta [dockerfiles](https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-diramtz/tree/main/dockerfiles)
+
+
+
+**Referencias**
+
+[Algoritmo Ford Fulkerson](https://es.wikipedia.org/wiki/Algoritmo_de_Ford-Fulkerson)
+
+[Libro optimización nota 4.2](https://itam-ds.github.io/analisis-numerico-computo-cientifico/IV.optimizacion_en_redes_y_prog_lineal/4.1/Definiciones_generales_de_flujo_en_redes.html)
+
+[Ford Fulkerson Python](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)
