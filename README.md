@@ -55,10 +55,12 @@ Un camino de aumento es un camino dirigido de la fuente s al sumidero t en $G_{f
   }
 
 
-Prueba nuestro paquete dando click en el botón de Binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-diramtz/main)
+Prueba nuestro paquete dando click en el botón de Binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-diramtz/main). Puedes jugar con el notebook `prueba_paquete.ipynb`
 
 
 Si deseas consultar la documentación de nuestro paquete **ffmaxflow**
 da click [aquí](https://optimizacion-2-2021-1-gh-classroom.github.io/practica-1-segunda-parte-diramtz/) 
  
 **Docker** 
+
+Para correr nuestra imagen de docker sigue las instrucciones que se encuentran en la carpeta [dockerfiles](https://github.com/optimizacion-2-2021-1-gh-classroom/practica-1-segunda-parte-diramtz/tree/main/dockerfiles)
