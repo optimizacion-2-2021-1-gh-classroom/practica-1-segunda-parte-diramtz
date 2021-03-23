@@ -7,7 +7,7 @@ name: docker-image-build-and-push
 # events but only for the main branch
 on:
   push:
-    branches: [ issue_6 ]
+    branches: [ main ]
     paths:
     - dockerfiles/pkg/Dockerfile #path in repo to Dockerfile
 
