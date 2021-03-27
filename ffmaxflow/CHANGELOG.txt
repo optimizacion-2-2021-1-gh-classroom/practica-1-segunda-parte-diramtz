@@ -12,3 +12,7 @@ Change Log
 0.0.3 (18/03/21)
 ----------------
 - Better docstrings
+
+0.0.4 (27/03/21)
+----------------
+- Trying out the long description
