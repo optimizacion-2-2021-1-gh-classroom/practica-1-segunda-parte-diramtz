@@ -6,7 +6,7 @@ ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
 ENV DEB_PACKAGES="sudo nano less git python3-dev python3-pip python3-setuptools nodejs"
 #Kale 
-ENV PIP_PACKAGES_KALE="kubeflow-kale==0.6.1"
+#ENV PIP_PACKAGES_KALE="kubeflow-kale==0.6.1"
 
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive && echo "America/Mexico_City" > /etc/timezone && apt-get install -y tzdata
 
@@ -19,8 +19,8 @@ RUN echo 'miuser:qwerty' | chpasswd
 RUN pip3 install jupyter jupyterlab==$JUPYTERLAB_VERSION --upgrade
 
 #Kale
-RUN pip install $PIP_PACKAGES_KALE --upgrade
-RUN jupyter labextension install kubeflow-kale-labextension
+#RUN pip install $PIP_PACKAGES_KALE --upgrade
+#RUN jupyter labextension install kubeflow-kale-labextension
 
 COPY requirements.txt .
 RUN pip3 install --requirement requirements.txt
