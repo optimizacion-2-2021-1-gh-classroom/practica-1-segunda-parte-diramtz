@@ -148,23 +148,26 @@ class create_flow_network:
         Returns:
             (string): error message when error arises
         """
-        if start == end:
-            return "No se puede tener bucles"
 
         if self.vertex_in_network(start) == False:
             return "Nodo origen ya ha sido agregado"
 
-        if self.vertex_in_network(end) == False:
+        elif self.vertex_in_network(end) == False:
             return "Nodo destino ya ha sido agregado"
-
-        newEdge = edge(start, end, capacity)
-        returnEdge = edge(end, start, 0)
-        newEdge.returnEdge = returnEdge
-        returnEdge.returnEdge = newEdge
-        vertex = self.get_vertex(start)
-        self.network[vertex.name].append(newEdge)
-        returnVertex = self.get_vertex(end)
-        self.network[returnVertex.name].append(returnEdge)
+        
+        elif start == end:
+            print("'No se pueden tener bucles.'")
+            print("'El cálculo de flujo máximo continuará sin tomar en cuenta este arco.'")
+        
+        else:
+            newEdge = edge(start, end, capacity)
+            returnEdge = edge(end, start, 0)
+            newEdge.returnEdge = returnEdge
+            returnEdge.returnEdge = newEdge
+            vertex = self.get_vertex(start)
+            self.network[vertex.name].append(newEdge)
+            returnVertex = self.get_vertex(end)
+            self.network[returnVertex.name].append(returnEdge)
 
     def get_path(self, start, end, path):
         """
@@ -207,7 +210,7 @@ class create_flow_network:
         sink = self.get_sink()
 
         if source == None or sink == None:
-            return "La red no tiene nodo origen y destido "
+            return "La red no tiene nodo origen y/o destino "
 
         path = self.get_path(source.name, sink.name, [])
         while path != None:
