@@ -1,9 +1,7 @@
 class vertex:
     """
     A vertex in a network.
-
     Attributes:
-
         name (string): name or identifier of vertex
         source (bool): whether the vertex is a source vertex or not
         sink (bool): whether the vertex is a sink vertex or not
@@ -17,9 +15,7 @@ class vertex:
 class edge:
     """
     An edge in a netwokt, going from one vertex to another
-
     Attributes:
-
         start (vertex): the edge comes out of this vertex
         end (vertex): the edge arrives at this vertex
         capacity (float): edge's maximum flow capacity
@@ -38,9 +34,7 @@ class create_flow_network:
     """
     A flow network to which we want to find the maximum flow posible going
     from one vertex to another.
-
     Attributes:
-
        vertices (list): lists all of vertices in the graph
        network (dictionary): maps every vertex's name to all of the edges
                              coming out of the said vertex
@@ -73,10 +67,8 @@ class create_flow_network:
         """
         Takes a vertex name finds it in the lists of vertices of the
         object of class create_flow_network.
-
         Args:
             name (string): name or identifier of vertex
-
         Returns:
             vertex (vertex): object of class vertex corresponding to the
                              input vertex name.
@@ -89,13 +81,9 @@ class create_flow_network:
         """
         Verifies if a certain vertex is in the list of vertices of the flow
         network.
-
         Args:
-
             name (string): name or identifier of vertex.
-
         Returns:
-
             (bool): if the vertex is in the network or not.
         """
         for vertex in self.vertices:
@@ -108,9 +96,7 @@ class create_flow_network:
         """
         Takes information from the network vertices and gets a list of all
         the edges going in and out of this vertices.
-
         Returns:
-
             allEdges (list): list of all vertices in the flow network.
         """
         allEdges = []
@@ -124,17 +110,12 @@ class create_flow_network:
         """
         Creates and adds a vertex to the network after it checks various
         error cases to ensure that the vertex can be added.
-
         Args:
-
             name (string): name or identifier of vertex_in_network
             source (bool): whether the vertex to add is source or not
             sink (bool): whether the vertex to add is sink or not
-
         Returns:
-
             (string): error message when error arises
-
         """
         if source == True and sink == True:
             return "El nodo {} no puede ser origen y destino".format(name)
@@ -160,34 +141,33 @@ class create_flow_network:
         by first checking the start and end vertices of said edge to
         verify that the are not the same vertex and that they are both in
         the network.
-
         Args:
-
             start (vertex): start vertex of the new edge
             end (vertex): end vertex of the new edge
             capacity (float): capcity of the new edge
-
         Returns:
-
             (string): error message when error arises
         """
-        if start == end:
-            return "No se puede tener bucles"
 
         if self.vertex_in_network(start) == False:
             return "Nodo origen ya ha sido agregado"
 
-        if self.vertex_in_network(end) == False:
+        elif self.vertex_in_network(end) == False:
             return "Nodo destino ya ha sido agregado"
-
-        newEdge = edge(start, end, capacity)
-        returnEdge = edge(end, start, 0)
-        newEdge.returnEdge = returnEdge
-        returnEdge.returnEdge = newEdge
-        vertex = self.get_vertex(start)
-        self.network[vertex.name].append(newEdge)
-        returnVertex = self.get_vertex(end)
-        self.network[returnVertex.name].append(returnEdge)
+        
+        elif start == end:
+            print("'No se pueden tener bucles.'")
+            print("'El cálculo de flujo máximo continuará sin tomar en cuenta este arco.'")
+        
+        else:
+            newEdge = edge(start, end, capacity)
+            returnEdge = edge(end, start, 0)
+            newEdge.returnEdge = returnEdge
+            returnEdge.returnEdge = newEdge
+            vertex = self.get_vertex(start)
+            self.network[vertex.name].append(newEdge)
+            returnVertex = self.get_vertex(end)
+            self.network[returnVertex.name].append(returnEdge)
 
     def get_path(self, start, end, path):
         """
@@ -196,15 +176,11 @@ class create_flow_network:
         uses this residual capacity to define how much flow to send along a
         given path. Then repeats this process until it reaches the end of the
         flow network.
-
         Args:
-
             start (vertex): start vertex of the new edge
             end (vertex): end vertex of the new edge
             path (list): list of vertices in a path
-
         Returns:
-
             path (list): list of vertices in a path
         """
 
@@ -225,9 +201,7 @@ class create_flow_network:
         calculates the flow while the path is not fully walked. It sums this
         flow to the fordward edges and substracts it from the reverse edges.
         Then, another path is calculated and we repeat the process.
-
         Returns:
-
             (string): error message when an error in the definition of the
                       network occurs.
             (float): maximum flow through the network
@@ -236,7 +210,7 @@ class create_flow_network:
         sink = self.get_sink()
 
         if source == None or sink == None:
-            return "La red no tiene nodo origen y destido "
+            return "La red no tiene nodo origen y/o destino "
 
         path = self.get_path(source.name, sink.name, [])
         while path != None:
@@ -246,3 +220,4 @@ class create_flow_network:
                 edge.returnEdge.flow -= flow
             path = self.get_path(source.name, sink.name, [])
         return sum(edge.flow for edge in self.network[source.name])
+
