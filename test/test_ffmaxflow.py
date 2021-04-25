@@ -1,7 +1,8 @@
 from pytest import approx
-from ffmaxflow import * 
+import os
 import networkx as nx
-
+os.chdir("../")
+from src.ffmaxflow.functions import *
 
 
 #Resolvemos usando networkx
