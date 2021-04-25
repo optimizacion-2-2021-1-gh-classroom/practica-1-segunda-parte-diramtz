@@ -156,8 +156,7 @@ class create_flow_network:
             return "Nodo destino ya ha sido agregado"
         
         elif start == end:
-            print("'No se pueden tener bucles.'")
-            print("'El cálculo de flujo máximo continuará sin tomar en cuenta este arco.'")
+            return "No se pueden tener bucles. \n El cálculo de flujo máximo continuará sin tomar en cuenta este arco."
         
         else:
             newEdge = edge(start, end, capacity)
