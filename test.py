@@ -63,11 +63,12 @@ red.MaxFlow()
 def test_vals_1():
     assert(red.MaxFlow() == flow_value)
 
+#Se espera que no regrese ningún valor, regresa un mensaje que no se pueden crear
 def test_vals_2():
-    assert red.create_edge(False,'e', 9) == "Nodo origen ya ha sido agregado"
+    assert red.create_edge(False,'e', 9) == None
     
 def test_vals_3():
-    assert red.create_edge('e', False, 9) == "Nodo destino ya ha sido agregado"
+    assert red.create_edge('e', False, 9) == None
     
 def test_vals_4():
-    assert red.create_edge('e','e', 9) == "No se pueden tener bucles. \n El cálculo de flujo máximo continuará sin tomar en cuenta este arco."
+    assert red.create_edge('e','e', 9) == None
