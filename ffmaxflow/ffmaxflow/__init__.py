@@ -150,10 +150,10 @@ class create_flow_network:
         """
 
         if self.vertex_in_network(start) == False:
-            print("Nodo origen ya ha sido agregado")
+            print("Nodo origen ya ha sido agregado. \n El cálculo de flujo máximo continúa con el primer valor asignado al nodo orígen.")
 
         elif self.vertex_in_network(end) == False:
-            print("Nodo destino ya ha sido agregado")
+            print("Nodo destino ya ha sido agregado. \n El cálculo del flujo máximo continúa con el primer valor asignado al nodo destino.")
         
         elif start == end:
             print("No se pueden tener bucles. \n El cálculo de flujo máximo continuará sin tomar en cuenta este arco.")

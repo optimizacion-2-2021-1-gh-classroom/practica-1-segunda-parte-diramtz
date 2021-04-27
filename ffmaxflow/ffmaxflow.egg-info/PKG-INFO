@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: ffmaxflow
-Version: 0.0.7
+Version: 0.0.9
 Summary: Implementation of the  Fork Fulkerson method to find the max posible flow of a network
 Home-page: https://optimizacion-2-2021-1-gh-classroom.github.io/practica-1-segunda-parte-diramtz/maxflow.html
 Author: Equipo 2
@@ -35,10 +35,20 @@ Description: This package implements the Fork Fulkerson algorithm to find the ma
         - Reimplementations and reinforcement
         
         0.0.6 (24/04/21)
+        ----------------
         - Change in warning for loops
         
         0.0.7 (26/04/21)
-        - Prints warnings instead of returning them"
+        ----------------
+        - Prints warnings instead of returning them.
+        
+        0.0.8 (27/04/21)
+        ----------------
+        - Adds self-explanatory messages in loop errors.
+        
+        0.0.9 (27/04/21)
+        ----------------
+        - Change in warning messages for repeated sink and source nodes.
         
 Keywords: max flow
 Platform: UNKNOWN
