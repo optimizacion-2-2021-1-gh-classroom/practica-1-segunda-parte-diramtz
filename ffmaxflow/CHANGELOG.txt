@@ -23,3 +23,6 @@ Change Log
 
 0.0.6 (24/04/21)
 - Change in warning for loops
+
+0.0.7 (26/04/21)
+- Prints warnings instead of returning them"
